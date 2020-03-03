@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Enter number and power"
+read number
+pow=1
+for((i=1;i<=$number;i++))
+do
+pow=$((2*$pow))
+done
+

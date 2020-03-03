@@ -1,0 +1,19 @@
+#!/bin/bash -x
+
+echo "Think the number between 1 to 100 Number :="
+
+lower_number=1
+higher_number=100
+
+while [ lower_number -lt higher_number ]
+do
+	mid=$(((( lower_number + higher_number)) / 2))
+	read -p "Enter the Number lesser than $mid please enter 0 Greater than $mid 1 or Number Equal to 2" ch
+	if [ 0 == $ch ]; then
+		mid=$mid-1
+	elif [ 1== $ch ]; then
+	mid=$mid+1
+	if [ $ch -eq $mid ]; then
+	echo "Number is : ="
+	fi
+done

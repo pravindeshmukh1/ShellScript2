@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "Enter number and power"
+read number
+i=1
+limit=256
+while (( i <= $number ))
+do
+if [ $number -lt $limit ]
+then
+
+echo "2^$i" $(($i**2))
+fi
+i=$((i+1
+))
+done

@@ -1,0 +1,18 @@
+#!/bin/bash -x
+
+head=0
+tail=0
+
+while [[ $((head <= 11)) || $((tail <= 11)) ]]
+do
+	number=$((RANDOM % 2
+
+while flips <= 100:
+     if coin == 1:
+        print("Heads")
+        heads += 1
+        flips +=1
+     elif coin == 2:
+        print("tails")
+        tails += 1
+        flips +=1

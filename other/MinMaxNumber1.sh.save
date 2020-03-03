@@ -1,0 +1,35 @@
+#!/bin/bash -x
+
+highervalue=999
+lowervalue=100
+first_randomNo=$(( RANDOM % (highervalue - lowervalue + 1 ) + lowervalue ))
+second_randomNo=$(( RANDOM % (highervalue - lowervalue + 1 ) + lowervalue ))
+third_randomNo=$(( RANDOM % (highervalue - lowervalue + 1 ) + lowervalue ))
+forth_randomNo=$(( RANDOM % (highervalue - lowervalue + 1 ) + lowervalue ))
+fifth_randomNo=$(( RANDOM % (highervalue - lowervalue + 1 ) + lowervalue ))
+max_randomNo=$first_randomNo
+min_randomNo=$first_randomNo
+
+
+if [ $max_randomNo -lt $second_randomNo ]
+then
+	max_randomNo=$second_randomNo
+else 
+	min_randomNo=$second_randomNo 
+if [ $max_randomNo -lt $third_randomNo ]
+then
+        max_randomNo=$thrid_randomNo
+else 
+        min_randomNo=$third_randomNo 
+if [ $max_randomNo -lt $forth_randomNo ]
+then
+        max_randomNo=$forth_randomNo
+else 
+        min_randomNo=$forth_randomNo 
+if [ $max_randomNo -lt $fifth_randomNo ]
+then
+        max_randomNo=$fifth_randomNo
+else 
+        min_randomNo=$fifth_randomNo 
+
+echo $max_randomNo

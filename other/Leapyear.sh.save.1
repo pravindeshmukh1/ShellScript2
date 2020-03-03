@@ -1,0 +1,13 @@
+#!/bin/bash
+
+read -p "Enter the  year -: " year
+
+if [ `expr $year -ge 9999` -a `expr $year -le 1000` ];
+then
+	echo "Enter the 4 digit ";
+elif [ `expr $year % 4` -eq 0 -a `expr $year % 100` -ne 0 -o `expr $year % 400` -eq 0 ];
+	then
+	echo "True";
+	else
+	echo "false";
+fi

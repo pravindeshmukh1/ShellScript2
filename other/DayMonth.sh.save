@@ -1,0 +1,14 @@
+#!/bin/sh
+
+a=read -p "Enter the Day :-"
+b=read -p "Enter the Month :-"
+
+if [ $a -ge 20  && $b -ge 3  ]
+do
+	if [ $ $a -le 20 && $b -le 4 ]
+	do
+	echo "true"
+	done
+else
+	echo "false"
+done
